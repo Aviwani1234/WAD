@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Updating DOM using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>DOM Update Example</h1>
+  <p id="message">Initial message</p>
+  <button id="updateBtn">Update Message</button>
+
+  <script>
+    // Wait for the document to be ready
+    $(document).ready(function() {
+      // Attach a click event handler to the button
+      $("#updateBtn").click(function() {
+        // Update the message text
+        $("#message").text("Updated message");
+        $("#message").css('color','blue');
+      });
+    });
+  </script>
+</body>
+</html>
